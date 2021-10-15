@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formSelection</title>
+       
+        <link rel="stylesheet" href="CSS/homePage.css">
+        <link rel="stylesheet" href="CSS/navigation_bar.css">
+        <script src="JS/navigation_bar.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body class="homepage">
+        <div>
+            
+            <header class="nav_header">
+                <div>
+                    <div class="header_right">
+                        
+                    </div>
+                    <div class="header_logowrap">
+                        <a href="homePage.html" class="header_logo"></a>
+                    </div>
+                    <div class="header_left" id="mySidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="homePage.html">Home</a>
+                        <a href="https://www.bbc.com/weather/1248991">Weather</a>
+                        <a href="https://doa.gov.lk/index.php/en/croptechnology">About Crops</a>
+                        <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/use/worldsoils/?cid=nrcs142p2_054013">Soil Types Map</a>
+                        
+                    </div>
+                    <button class="openbtn" onclick="openNav()">☰ </button>
+                </div>
+                
+            </header>
+        
+            
+            <section>
+                <br> <br> <br> <br>  <br> <br> <br> <br>
+                <div class="title">
+                    <h2>Fill Your Details Here</h2>
+                    <hr>
+                </div>
+            </section>
+            <section class="link_set">
+                <div class="grid-container">
+                    <div class="grid-item item1" style="padding: 0;">
+                        <img src="img/customer.jpg" height="730px" width="300px" style = "width: 100%;">
+                        <div class="text">
+                            <p id="id1" style="margin: 0; padding: 0;"><a href="customer.html" style="color: #fff">Customer</a></p>
+                        </div>
+                        </div>
+                        <div class="grid-item item2">
+                            <img src="img/transport.jpg" width="200px" height="300px" style="width: 100%">
+                            <div class="text">
+                                <p id="id2" style="margin: 0; padding: 0;"><a href="transport.html" style="color: #fff">Transport Service Owner</a></p>
+                            </div>
+                        </div>
+                        <div class="grid-item item3" style="margin-top: 0; padding: 0;">
+                            <img src="img/consultant.webp" width="200px" height="300px" style="width: 100%;">
+                            <div class="text">
+                                <p id="id3" style="margin: 0; padding: 0;"><a href="consultant.html" style="color: #fff">Consultant</a></p>
+                            </div>
+                        </div>  
+                        <div class="grid-item item4">
+                            <img src="img/farmer.webp"width="400px" height="200px" style="width: 100%; height: 100%;">
+                            <div class="text">
+                                <p id="id4" style="margin: 0; padding: 0; display: inline;"><a href="farmer.html" style="color: #fff">Farmer</a></p>
+                            </div>
+                        </div>
+                        
+                  </div>
+            </section>
+            <section class="content_section01">
+                <h2 id="feedback">Leave a comment</h2>
+                <hr>
+                <div class="comments">
+                    <form name="form">
+                        <textarea name="comment" rows="5" class="comment_text" cols="82" placeholder="Comments"></textarea>
+                        <input type="text" id="fname" class="comment_text" placeholder="Name"  name="name1">
+                        <input type="email" name="email" class="comment_text" placeholder="Email" id ="email">
+                        <br>
+                        <div class="section_rate dark">
+                            <h1>Rate our site</h1>
+
+                            <label>
+                                <input type="radio" name="dark" id="improve" checked>
+                                <span class="design"></span>
+                                <span class="text">Improve</span>
+                            </label>
+                        
+                            <label>
+                                <input type="radio" id="okay" name="dark">
+                                <span class="design"></span>
+                                <span class="text">Okay</span>
+                            </label>
+                        
+                            <label>
+                                <input type="radio" id="gd" name="dark">
+                                <span class="design"></span>
+                                <span class="text">Good</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" id="Ex" name="dark">
+                                <span class="design"></span>
+                                <span class="text">Excellent</span>
+                            </label>
+                        </div>
+                        <button onclick="checkForm()" class="btn_submit">POST COMMENT</button> 
+                    </form>
+                </div>
+            </section>
+            <section class="social_media">
+                <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-facebook-f icon"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter icon"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                  </ul>
+            </section>
+            <br>
+            <footer>
+               
+                
+            </footer>
+        </div>
+       
+    </body>
+</html>
